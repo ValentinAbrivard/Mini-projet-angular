@@ -1,0 +1,33 @@
+<p>detail works!</p>
+
+<table class="table" *ngIf="user">
+<thead>
+<tr>
+<th scope="col">Firstname</th>
+<th scope="col">Lastname</th>
+<th scope="col">Email</th>
+<th scope="col">age</th>
+<th scope="col">company</th>
+<th scope="col">phone</th>
+<th scope="col">favoriteFruit</th>
+<th scope="col">address</th>
+
+</tr> 
+</thead>
+<tbody>
+<tr>
+<td>{{user.firstname}}</td>
+<td>{{user.lastname}}</td>
+<td>{{user.email}}</td>
+<td>{{user.age}}</td>
+<td>{{user.company}}</td>
+<td>{{user.phone}}</td>
+<td>{{user.favoriteFruit}}</td>
+<td>{{user.address}}</td>
+
+</tr> 
+</tbody>
+<button [routerLink]="['/listeuser']" routerLinkActive="router-link-active" >back</button>
+</table> 
+ 
+

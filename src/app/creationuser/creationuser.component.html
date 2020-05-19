@@ -1,0 +1,25 @@
+<p>creationuser works!</p>
+ 
+<form [formGroup]="userform" (ngSubmit)="onSubmit()" class="container-fluid">
+<div class="form-group col-5">
+<input type="text" class="form-control" name="firstname" formControlName="firstname"
+placeholder="firstname">
+<input type="text" class="form-control" name="lastname" formControlName="lastname"
+placeholder="lastname">
+<input type="text" class="form-control" name="email" formControlName="email"
+placeholder="email">
+<input type="text" class="form-control" name="age" formControlName="age"
+placeholder="age">
+<input type="text" class="form-control" name="company" formControlName="company"
+placeholder="company">
+<input type="text" class="form-control" name="phone" formControlName="phone"
+placeholder="phone">
+<input type="text" class="form-control" name="address" formControlName="address"
+placeholder="address">
+<input type="text" class="form-control" name="favoriteFruit" formControlName="favoriteFruit"
+placeholder="favorite fruit">
+</div> 
+<button type="submit" [disabled]="!userform.valid" class="btn btn-primary">Submit</button> 
+</form>
+ 
+
